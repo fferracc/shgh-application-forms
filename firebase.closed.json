@@ -1,0 +1,13 @@
+{
+  "firestore": {
+    "database": "(default)",
+    "location": "nam5",
+    "rules": "firestore.locked.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "hosting": [
+    { "site": "refugees-appform", "public": "closed-site", "rewrites": [{ "source": "**", "destination": "/index.html" }] },
+    { "site": "bury-digital-skills", "public": "closed-site", "rewrites": [{ "source": "**", "destination": "/index.html" }] },
+    { "site": "sovereignhousegh-portal", "public": "closed-site", "rewrites": [{ "source": "**", "destination": "/index.html" }] }
+  ]
+}

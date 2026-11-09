@@ -1,0 +1,10 @@
+rules_version = '2';
+// 6 Oct 2026: the old application forms moved to the Sovereign House GH portal (shgh-lms1).
+// Nobody may read or write this database any more. A full backup is in Intranet SHGH/private-backups.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

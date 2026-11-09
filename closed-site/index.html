@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Sovereign House GH forms</title>
+<script>
+  // 6 Oct 2026: the application forms moved to the Sovereign House GH portal.
+  // Each old address goes to its new form; closed forms show a short message.
+  (function () {
+    var NEW = "https://shgh-portal.web.app/apply?p=";
+    var moved = { "/": "S46T46Q1PWk4PXuFDSod", "/bury": "6A7JbIQGvnI4N2i65CWe", "/referrals": "G2mJV4xorgCBpOzlIKQV" };
+    var path = location.pathname.replace(/\/+$/, "") || "/";
+    if (moved[path]) location.replace(NEW + moved[path]);
+  })();
+</script>
+<style>
+  :root { --bg: #f6f7f9; --card: #ffffff; --text: #1d2433; --muted: #5b6475; --accent: #1f4e8c; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #12151b; --card: #1b2029; --text: #e7eaf0; --muted: #a3abba; --accent: #7fb0ff; } }
+  body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: var(--bg); color: var(--text); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; padding: 16px; box-sizing: border-box; }
+  main { background: var(--card); max-width: 480px; width: 100%; padding: 32px 28px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.08); }
+  h1 { font-size: 1.3rem; margin: 0 0 12px; }
+  p { margin: 0 0 12px; color: var(--muted); }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>This form is closed</h1>
+  <p>Thank you for your interest in Sovereign House GH. This form is no longer taking applications.</p>
+  <p>For our current courses, or if you have a question about an application you already sent, please email <a href="mailto:admin@sovereignhousegh.com">admin@sovereignhousegh.com</a>.</p>
+</main>
+</body>
+</html>
